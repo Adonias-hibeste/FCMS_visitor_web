@@ -48,7 +48,7 @@ class AdminController extends Controller
     // Attempt to log in with the admin guard
     if (Auth::guard('admin')->attempt($credentials)) {
         // Redirect to the intended page or default to the root
-        return redirect()->route('admin.register');
+        return redirect()->route('admin.dashboard');
     }
 
     // Redirect back with an error message
