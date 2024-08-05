@@ -1,5 +1,5 @@
 @extends("layout.admin")
-@section("title,"admin dashboard")
+@section("title", "admin dashboard")
 @section("content")
 <h1 class="mt-4">Dashboard</h1>
                         <ol class="breadcrumb mb-4">
