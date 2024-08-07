@@ -8,7 +8,7 @@ Route::get('/', function () {
 });
 
 
-//Route::middleware('auth:admin')->group(function () {
+// Route::middleware('auth:admin')->group(function () {
 
     Route::get('/admin/register', [AdminController::class, 'register'])->name('admin.register');
     Route::post('/admin/register', [AdminController::class, 'registerPost'])->name('admin.registerPost');
@@ -17,7 +17,7 @@ Route::get('/', function () {
    Route::get('/admin/dashboard',function(){
        return view ('admin.dashboard');
    })->name('admin.dashboard');
- //});
+//  });                                                 
 
 
 

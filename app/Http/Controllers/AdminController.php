@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 class AdminController extends Controller
 {
     public function register(){
-        return view ('Admin.register');
+        return view ('admin.register');
     }
     
     public function registerPost(Request $request){
@@ -31,7 +31,7 @@ class AdminController extends Controller
     }
 
     public function login(){
-        return view ('Admin.login');
+        return view ('admin.login');
     }
 
     public function loginPost(Request $request)
